@@ -1,57 +1,70 @@
-![Logo-nav](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/Kalvium-Logo.png)
+# Getting Started with Create React App
 
-### Learning Goals:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This aim of this lab is to understand the working of `redux`. As we know that, there are three major concepts of redux, which take in part in order understand redux. The following are the three conceps:
+## Available Scripts
 
-1. Actions - plain JavaScript object that contains information.
-2. Reducers - pure functions that contain the logic and calculation that needed to be performed on the state.
-3. Store - an object which provides the state of the application. 
+In the project directory, you can run:
 
-Through this lab, we will try to apply all the above concepts, in order to build a very simple application.
+### `npm start`
 
-**NOTE:** You may not find a great use of using redux, for this simple application, but for complex applications --> where the application is build with many components and these components share some states, in such cases redux becomes really powerful. But in order to understand and practice redux, we will go with a simple example.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-***use the following command in order to install redux: `npm install redux`***
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Problem Statement:
+### `npm test`
 
-We need to build a `Like functionality`. -> which means, you need to create two buttons, which can like and unlike.
-If someone clicks on the like button, the `like counter` should increment by one, and if someone click on the unlike button, the `like counter` should decrease by one, like shown below:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/likeCounter.gif)
+### `npm run build`
 
-### Progression 1:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. create a new project and name it as -> `redux-like-counter`
-2. Create three files: 
-    1. `Actions.js` -> which will contain all your actions.
-    2. `Reducer.js` -> which will contain all your reducers.
-    3. `LikeCounter.js` -> which will contain the store. You have to write the `jsx` for the application in this component. ( your `app.js` should render `LikeCounter` only.)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Progression 2:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Inside `Actions.js` -> create two functions -:
-1. incrementLike() -> this function should return an object which contains the `INCREMENT` as the type of action.
-2. decrementLike() -> this function should return an object which contains the `DECREMENT` as the type of action.
+### `npm run eject`
 
-### Progression 3:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Inside `Reducer.js` : create one function as `reducer`, which takes two arguments:
-1. state
-2. action
-Based on the type of action (in our case there are only two types of actions ->`INCREMENT` and `DECREMENT` ), write the logic for that particular action.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Progression 4:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Inside `LikeCounter.js` -> create a store, and pass `reducer` (the same reducer which you created in the previous progression) as an argument to it.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Use `dispatch` to dispatch the action to the store.
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Happy Coding ❤️!
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
